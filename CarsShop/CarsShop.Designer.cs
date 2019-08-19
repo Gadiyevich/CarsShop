@@ -48,7 +48,7 @@
             this.CarsShopLabel.BackColor = System.Drawing.Color.Aqua;
             this.CarsShopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CarsShopLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.CarsShopLabel.Location = new System.Drawing.Point(457, 28);
+            this.CarsShopLabel.Location = new System.Drawing.Point(438, 22);
             this.CarsShopLabel.Name = "CarsShopLabel";
             this.CarsShopLabel.Size = new System.Drawing.Size(310, 67);
             this.CarsShopLabel.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             this.CarsListLabel.AutoSize = true;
             this.CarsListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CarsListLabel.Location = new System.Drawing.Point(42, 131);
+            this.CarsListLabel.Location = new System.Drawing.Point(41, 146);
             this.CarsListLabel.Name = "CarsListLabel";
             this.CarsListLabel.Size = new System.Drawing.Size(98, 25);
             this.CarsListLabel.TabIndex = 1;
@@ -69,7 +69,7 @@
             this.carsListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.carsListbox.FormattingEnabled = true;
             this.carsListbox.ItemHeight = 25;
-            this.carsListbox.Location = new System.Drawing.Point(47, 171);
+            this.carsListbox.Location = new System.Drawing.Point(46, 186);
             this.carsListbox.Name = "carsListbox";
             this.carsListbox.Size = new System.Drawing.Size(396, 204);
             this.carsListbox.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.shoppingCartListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shoppingCartListbox.FormattingEnabled = true;
             this.shoppingCartListbox.ItemHeight = 25;
-            this.shoppingCartListbox.Location = new System.Drawing.Point(770, 171);
+            this.shoppingCartListbox.Location = new System.Drawing.Point(769, 186);
             this.shoppingCartListbox.Name = "shoppingCartListbox";
             this.shoppingCartListbox.Size = new System.Drawing.Size(415, 204);
             this.shoppingCartListbox.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(765, 131);
+            this.label1.Location = new System.Drawing.Point(764, 146);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 25);
             this.label1.TabIndex = 3;
@@ -98,7 +98,7 @@
             // 
             this.purchaseItem.BackColor = System.Drawing.Color.OrangeRed;
             this.purchaseItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.purchaseItem.Location = new System.Drawing.Point(496, 232);
+            this.purchaseItem.Location = new System.Drawing.Point(495, 247);
             this.purchaseItem.Name = "purchaseItem";
             this.purchaseItem.Size = new System.Drawing.Size(222, 68);
             this.purchaseItem.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             this.vendorListboxLabel.AutoSize = true;
             this.vendorListboxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vendorListboxLabel.Location = new System.Drawing.Point(42, 431);
+            this.vendorListboxLabel.Location = new System.Drawing.Point(41, 446);
             this.vendorListboxLabel.Name = "vendorListboxLabel";
             this.vendorListboxLabel.Size = new System.Drawing.Size(93, 25);
             this.vendorListboxLabel.TabIndex = 10;
@@ -121,7 +121,7 @@
             this.vendorsListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vendorsListbox.FormattingEnabled = true;
             this.vendorsListbox.ItemHeight = 25;
-            this.vendorsListbox.Location = new System.Drawing.Point(47, 468);
+            this.vendorsListbox.Location = new System.Drawing.Point(46, 483);
             this.vendorsListbox.Name = "vendorsListbox";
             this.vendorsListbox.Size = new System.Drawing.Size(351, 204);
             this.vendorsListbox.TabIndex = 9;
@@ -130,7 +130,7 @@
             // 
             this.storeProfitValue.AutoSize = true;
             this.storeProfitValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.storeProfitValue.Location = new System.Drawing.Point(724, 468);
+            this.storeProfitValue.Location = new System.Drawing.Point(723, 483);
             this.storeProfitValue.Name = "storeProfitValue";
             this.storeProfitValue.Size = new System.Drawing.Size(66, 25);
             this.storeProfitValue.TabIndex = 12;
@@ -140,7 +140,7 @@
             // 
             this.storeProfitlabel.AutoSize = true;
             this.storeProfitlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.storeProfitlabel.Location = new System.Drawing.Point(570, 468);
+            this.storeProfitlabel.Location = new System.Drawing.Point(569, 483);
             this.storeProfitlabel.Name = "storeProfitlabel";
             this.storeProfitlabel.Size = new System.Drawing.Size(127, 25);
             this.storeProfitlabel.TabIndex = 11;
@@ -151,7 +151,7 @@
             this.makePurchase.BackColor = System.Drawing.Color.DodgerBlue;
             this.makePurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.makePurchase.ForeColor = System.Drawing.Color.Black;
-            this.makePurchase.Location = new System.Drawing.Point(1020, 391);
+            this.makePurchase.Location = new System.Drawing.Point(1019, 406);
             this.makePurchase.Name = "makePurchase";
             this.makePurchase.Size = new System.Drawing.Size(165, 54);
             this.makePurchase.TabIndex = 13;
@@ -164,7 +164,7 @@
             this.deleteFromShopCart.BackColor = System.Drawing.Color.DimGray;
             this.deleteFromShopCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteFromShopCart.ForeColor = System.Drawing.Color.Black;
-            this.deleteFromShopCart.Location = new System.Drawing.Point(839, 391);
+            this.deleteFromShopCart.Location = new System.Drawing.Point(838, 406);
             this.deleteFromShopCart.Name = "deleteFromShopCart";
             this.deleteFromShopCart.Size = new System.Drawing.Size(165, 54);
             this.deleteFromShopCart.TabIndex = 14;

@@ -26,7 +26,7 @@ namespace CarsShop
             InitializeComponent();
             SetupData();
 
-            cartListBinding.DataSource = store.Cars     ;
+            cartListBinding.DataSource = store.Cars;
             carsListbox.DataSource = cartListBinding;
 
             carsListbox.DisplayMember = "Display";
@@ -138,33 +138,58 @@ namespace CarsShop
 
         private void PurchaseItem_Click(object sender, EventArgs e)
         {
-            Car selectedCar = (Car)carsListbox.SelectedItem;
+            try
+            {
+                Car selectedCar = (Car)carsListbox.SelectedItem;
 
 
-            shoppingCartData.Add(selectedCar);
+                shoppingCartData.Add(selectedCar);
 
-            shoppingCartBinding.ResetBindings(false);
+                shoppingCartBinding.ResetBindings(false);
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Something went wrong! Please repeat", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
 
 
         }
 
         private void MakePurchase_Click(object sender, EventArgs e)
         {
-            foreach (Car item in shoppingCartData)
+
+            try
             {
-                item.Sold = true;
-                cartListBinding.DataSource = store.Cars.Where(x => x.Sold == false).ToList();
 
-                item.Owner.PaymentDue += (decimal)item.Owner.Commission * item.Price;
-                storeProfit +=(1- (decimal)item.Owner.Commission) * item.Price;
+                foreach (Car item in shoppingCartData)
+                {
+                    item.Sold = true;
+                    cartListBinding.DataSource = store.Cars.Where(x => x.Sold == false).ToList();
 
-                storeProfitValue.Text = string.Format("${0}", storeProfit);
+                    item.Owner.PaymentDue += (decimal)item.Owner.Commission * item.Price;
+                    storeProfit += (1 - (decimal)item.Owner.Commission) * item.Price;
+
+                    storeProfitValue.Text = string.Format("${0}", storeProfit);
+                }
+
+                shoppingCartData.Clear();
+                shoppingCartBinding.ResetBindings(false);
+                vendorsBinding.ResetBindings(false);
+
+
+
             }
+            catch (Exception)
+            {
 
-            shoppingCartData.Clear();
-            shoppingCartBinding.ResetBindings(false);
-            vendorsBinding.ResetBindings(false);
+                MessageBox.Show("Something went wrong! Please repeat","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
 
+            }
+            
         }
 
         private void DeleteFromShopCart_Click(object sender, EventArgs e)
